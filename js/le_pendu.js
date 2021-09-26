@@ -33,7 +33,11 @@ let alpha = {
 
 };
 
+let nbrPoint = '7';
 
+let regle = "r";
+let quitte = "q";
+let joue = "j";
    
         // Fonction pour que l'ordinateur choisisses un mots.
 function generateWords() {
@@ -41,21 +45,41 @@ function generateWords() {
     return (randomWords);
 }
 const randomWords = generateWords()
-    alert(randomWords)
+    // alert(randomWords)
 
     
 
-    alert(alpha[3])
+//     alert(alpha[3])
+
+
+ //accueil du joueur
+
+ let welcome = alert("bonjour, on va jouer au jeu du pendu");
+ 
+ let choiceRQJ = prompt ('tape "r" pour voir les règles, "q" pour quitter ou "j" pour jouer')
+
+    if (choiceRQJ === "r") {
+    alert('ceci sont les règles du jeux');
+}
+    else if (choiceRQJ === "j") { 
+    alert('l\'ordinateur choisis un mot');
+}
+    else 
+     {
+        alert('au revoir' + closewindow);
+        }
+
+    // L'ordinateur affiche le mot
+
+prompt('Il vous reste ' + nbrPoint + ' points\n' + randomWords + '\nChoisis une lettre');
 
 
 
-
-
-
-
+// }
 // let arrayWords1 = arrayWords
 
 
 //     console.log(arrayWords1.replace(regexp|arrayWords , "_"));
 
 //     // array1.forEach(element => console.log(element));
+
